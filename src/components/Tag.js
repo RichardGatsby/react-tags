@@ -9,7 +9,6 @@ import {
   dragSource,
   dropCollect,
 } from './DragAndDropHelper';
-import { canDrag } from './utils';
 
 import RemoveComponent from './RemoveComponent';
 
@@ -30,7 +29,6 @@ class Tag extends Component {
     const { className = '' } = tag;
     const tagComponent = ( <span
       className={ClassNames('tag-wrapper', classNames.tag, className)}
-      style={{opacity: isDragging ? 0 : 1, 'cursor': canDrag(props) ? 'move' : 'auto'}}
       onClick={props.onTagClicked}
       onKeyDown={props.onTagClicked}
       onTouchStart={props.onTagClicked}>

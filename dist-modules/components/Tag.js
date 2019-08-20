@@ -26,8 +26,6 @@ var _classnames2 = _interopRequireDefault(_classnames);
 
 var _DragAndDropHelper = require('./DragAndDropHelper');
 
-var _utils = require('./utils');
-
 var _RemoveComponent = require('./RemoveComponent');
 
 var _RemoveComponent2 = _interopRequireDefault(_RemoveComponent);
@@ -70,7 +68,6 @@ var Tag = function (_Component) {
         'span',
         {
           className: (0, _classnames2.default)('tag-wrapper', classNames.tag, className),
-          style: { opacity: isDragging ? 0 : 1, 'cursor': (0, _utils.canDrag)(props) ? 'move' : 'auto' },
           onClick: props.onTagClicked,
           onKeyDown: props.onTagClicked,
           onTouchStart: props.onTagClicked },
