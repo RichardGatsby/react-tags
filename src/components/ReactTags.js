@@ -57,6 +57,7 @@ class ReactTags extends Component {
     tags: PropTypes.arrayOf(
       PropTypes.shape({
         id: PropTypes.string.isRequired,
+        className: PropTypes.string
       })
     ),
     allowUnique: PropTypes.bool,
